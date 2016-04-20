@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Седона</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="page-header">
+            <div class="logo">
+                <img src="img/logo-full.png" width="138" height="70" alt="CITY OF SEDONA">
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li>
+                        <a href="#info">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#media">Фото и видео</a>
+                    </li>
+                    <li>
+                        <a href="#maps">Карта штата</a>
+                    </li>
+                    <li>
+                        <a href="#hotels">Гостиницы</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="filter">
+                <form class="searchbox" action="#" method="post">
+                    <fieldset>
+                        <legend>Инфраструктура</legend>
+                        <input type="checkbox" name="pool" value="pool" id="pool">
+                        <label for="pool">Бассейн:</label>
+                        <input type="checkbox" name="parking" value="parking" id="parking">
+                        <label for="parking">Парковка:</label>
+                        <input type="checkbox" name="wifi" value="wifi" id="wifi">
+                        <label for="wifi">Wi-fi:</label> 
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Тип жилья</legend>
+                        <input type="checkbox" name="hotel" value="hotel" id="hotel">
+                        <label for="hotel">Дата заезда:</label>
+                        <input type="checkbox" name="market" value="market" id="market">
+                        <label for="market">Дата выезда:</label>
+                        <input type="checkbox" name="apartments" value="apartments" id="apartments">
+                        <label for="apartments">Взсрослые:</label> 
+                    </fieldset>
+                    <fieldset>
+                        <legend>Стоимость в сутки (Р):</legend>
+                        <input type="text" placeholder="ОТ 0">
+                        <input type="text" placeholder="ДО 3000">
+                        <input type="range" id="dayscount" name="dayscount" min="0" max="3000" step="100">
+                    </fieldset>
+                    <button class="btn" type="submit">ПОКАЗАТЬ</button>
+                </form> 
+            </section>
+            <section class="sort">
+                <div class="sort-finded">Найдено: 3</div>
+                <div class="sort-title">Сортировка:</div>
+                <ul>
+                    <li>По цене</li>
+                    <li>По типу</li>
+                    <li>По рейтингу</li>
+                </ul>
+                <div class="sort-arrows">
+                    <span class="sort-arrows-up"></span>
+                    <span class="sort-arrows-down"></span>
+                </div>
+            </section>
+            <section class="result">
+                 <article class="result-item">
+                    <div class="result-item-photo">
+                        <img src="img/hotels-amara.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
+                    </div>
+                
+                    <div class="result-item-info">
+                        <h2>AMARA RESORT & SPA</h2>
+                        <p>Гостиницы</p>
+                        <p>От 3500 Р.</p>
+                    </div>
+                    <a class="result-btn more" href="#">Подробнее</a>
+                    <a class="result-btn book" href="#">Забронировать</a>
+                    <span class="result--item-stars"></span>
+                    <span class="result-item-rating"></span>
+                </article>
+                <article class="result-item">
+                    <div class="result-item-photo">
+                        <img src="img/hotels-desert.jpg" width="135" height="90" alt="DESERT QUAIL INN">
+                    </div>
+
+                    <div class="result-item-info">
+                        <h2>DESERT QUAIL INN</h2>
+                        <p>Мотель</p>
+                        <p>От 2000 Р.</p>
+                    </div>
+                    <a class="result-btn more" href="#">Подробнее</a>
+                    <a class="result-btn book" href="#">Забронировать</a>
+                    <span class="result-item-stars"></span>
+                    <span class="result-item-rating"></span>
+                </article> 
+                <article class="result-item">
+                    <div class="result--item-photo">
+                        <img src="img/hotels-villa.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
+                    </div>
+        
+                    <div class="result-item-info">
+                        <h2>VILLAS AT POCO DIABLO</h2>
+                        <p>Апартаменты</p>
+                        <p>От 4000 Р.</p>
+                    </div>
+                    <a class="result-btn more" href="#">Подробнее</a>
+                    <a class="result-btn book" href="#">Забронировать</a>
+                    <span class="result-item-stars"></span>
+                    <span class="result-item-rating"></span>
+                </article> 
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div><strong>#VISITSEDONA</strong></div>
+            <section class="footer-social">
+                <a class="social-btn social-btn-tw" href="#twitter">TWITTER</a>
+                <a class="social-btn social-btn-fb" href="#facebook">FACEBOOK</a>
+                <a class="social-btn social-btn-yt" href="#youtube">YOUTUBE</a>
+            </section>
+            <section class="footer-copyright">
+                <img src="img/academy-logo.png" width="200" height="60" alt="HTMLACADEMY">
+            </section>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
