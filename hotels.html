@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>HTML Academy: Седона</title>
         <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+        <style type="text/css"></style>
     </head>
     <body>
-        <header class="page-header">
-            <div class="logo">
-                <img src="img/logo-full.png" width="138" height="70" alt="CITY OF SEDONA">
-            </div>
+        <header class="main-header">
             <nav class="main-menu">
                 <ul>
                     <li>
@@ -17,6 +16,9 @@
                     </li>
                     <li>
                         <a href="#media">Фото и видео</a>
+                    </li>
+                    <li class="logo">
+                        <img src="img/logo-full.png" width="138" height="70" alt="CITY OF SEDONA">
                     </li>
                     <li>
                         <a href="#maps">Карта штата</a>
@@ -27,7 +29,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="main-container clearfix">
             <section class="filter">
                 <form class="searchbox" action="#" method="post">
                     <fieldset>
@@ -58,76 +60,94 @@
                     <button class="btn" type="submit">ПОКАЗАТЬ</button>
                 </form> 
             </section>
-            <section class="sort">
+            <section class="sort clearfix">
                 <div class="sort-finded">Найдено: 3</div>
                 <div class="sort-title">Сортировка:</div>
-                <ul>
-                    <li>По цене</li>
-                    <li>По типу</li>
-                    <li>По рейтингу</li>
+                <ul class="sort-by">
+                    <li><a href="#">По цене</a></li>
+                    <li><a href="#">По типу</a></li>
+                    <li><a href="#">По рейтингу</a></li>
                 </ul>
                 <div class="sort-arrows">
-                    <span class="sort-arrows-up"></span>
-                    <span class="sort-arrows-down"></span>
+                    <span class="sort-arrows-up">1</span>
+                    <span class="sort-arrows-down">2</span>
                 </div>
             </section>
-            <section class="result">
-                 <article class="result-item">
+            <section class="result clearfix">
+                 <article class="result-item clearfix">
                     <div class="result-item-photo">
                         <img src="img/hotels-amara.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
                     </div>
                 
                     <div class="result-item-info">
                         <h2>AMARA RESORT & SPA</h2>
-                        <p>Гостиницы</p>
-                        <p>От 3500 Р.</p>
+                        <div class="more-about">
+                            <p>Гостиница</p>
+                            <a class="result-btn-more" href="#">Подробнее</a>
+                        </div>
+                        <div class="book-and-price">
+                            <p>От 3500 Р.</p>
+                            <a class="result-btn-book" href="#">Забронировать</a>
+                        </div>
                     </div>
-                    <a class="result-btn more" href="#">Подробнее</a>
-                    <a class="result-btn book" href="#">Забронировать</a>
-                    <span class="result--item-stars"></span>
-                    <span class="result-item-rating"></span>
+                    <div class="result-item-mark">
+                        <span class="result--item-stars"></span>
+                        <span class="result-item-rating"></span>
+                    </div>
                 </article>
-                <article class="result-item">
+                <article class="result-item clearfix">
                     <div class="result-item-photo">
                         <img src="img/hotels-desert.jpg" width="135" height="90" alt="DESERT QUAIL INN">
                     </div>
 
                     <div class="result-item-info">
                         <h2>DESERT QUAIL INN</h2>
-                        <p>Мотель</p>
-                        <p>От 2000 Р.</p>
+                        <div class="more-about">
+                            <p>Мотель</p>
+                            <a class="result-btn-more" href="#">Подробнее</a>
+                        </div>
+                        <div class="book-and-price">
+                            <p>От 2000 Р.</p>
+                            <a class="result-btn-book" href="#">Забронировать</a>
+                        </div>
                     </div>
-                    <a class="result-btn more" href="#">Подробнее</a>
-                    <a class="result-btn book" href="#">Забронировать</a>
-                    <span class="result-item-stars"></span>
-                    <span class="result-item-rating"></span>
+                    <div class="result-item-mark">
+                        <span class="result-item-stars"></span>
+                        <span class="result-item-rating"></span>
+                    </div>
                 </article> 
-                <article class="result-item">
-                    <div class="result--item-photo">
+                <article class="result-item clearfix">
+                    <div class="result-item-photo">
                         <img src="img/hotels-villa.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
                     </div>
         
                     <div class="result-item-info">
                         <h2>VILLAS AT POCO DIABLO</h2>
-                        <p>Апартаменты</p>
-                        <p>От 4000 Р.</p>
+                        <div class="more-about">
+                            <p>Апартаменты</p>
+                            <a class="result-btn-more" href="#">Подробнее</a>
+                        </div>
+                        <div class="book-and-price">
+                            <p>От 4000 Р.</p>
+                            <a class="result-btn-book" href="#">Забронировать</a>
+                        </div>
                     </div>
-                    <a class="result-btn more" href="#">Подробнее</a>
-                    <a class="result-btn book" href="#">Забронировать</a>
-                    <span class="result-item-stars"></span>
-                    <span class="result-item-rating"></span>
+                    <div class="result-item-mark">
+                        <span class="result-item-stars"></span>
+                        <span class="result-item-rating"></span>
+                    </div>
                 </article> 
             </section>
         </main>
         <footer class="main-footer">
-            <div><strong>#VISITSEDONA</strong></div>
+            <strong>#VISITSEDONA</strong>
             <section class="footer-social">
-                <a class="social-btn social-btn-tw" href="#twitter">TWITTER</a>
-                <a class="social-btn social-btn-fb" href="#facebook">FACEBOOK</a>
-                <a class="social-btn social-btn-yt" href="#youtube">YOUTUBE</a>
+                <a class="social-btn social-btn-tw" href="#twitter">TWIT</a>
+                <a class="social-btn social-btn-fb" href="#facebook">FACE</a>
+                <a class="social-btn social-btn-yt" href="#youtube">YOUT</a>
             </section>
             <section class="footer-copyright">
-                <img src="img/academy-logo.png" width="200" height="60" alt="HTMLACADEMY">
+                <img src="img/academy-logo.png" width="113" height="39" alt="HTMLACADEMY">
             </section>
         </footer>
         <script src="js/script.js"></script>
