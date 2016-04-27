@@ -326,25 +326,27 @@ h2 {
 
 .main-footer strong {
     display: inline-block;
-    width: 33.3%;
+    width: 240px;
     text-align: center;
     line-height: 48px;
     vertical-align: middle;
     font-size: 21px;
+    margin-right: 88px;
 }
 
 .footer-social {
     display: inline-block;
-    width: 33.3%;
+    width: 400px;
     text-align: center;
     line-height: 48px;
     vertical-align: middle;
     font-size: 21px;
+    margin-right: 88px;
 }
 
 .footer-copyright {
     display: inline-block;
-    width: 32.0%;
+    width: 240px;
     text-align: center;
     vertical-align: middle;
     height: 48px;
