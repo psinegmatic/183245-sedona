@@ -343,6 +343,7 @@ a.logo-href {
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     background-position: -20px -320px;
+    cursor: pointer;
     border: none;
     outline: none
 }
@@ -364,6 +365,7 @@ a.logo-href {
     background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     background-position: -20px -320px;
+    cursor: pointer;
     border: none;
     outline: none
 }
@@ -419,6 +421,7 @@ label.baby {
     width: 11px;
     height: 11px;
     background-position: -20px -1238px;
+    cursor: pointer;
     border: none;
     outline: none
 }
@@ -443,6 +446,7 @@ label.baby {
     width: 12px;
     height: 3px;
     background-position: -20px -1109px;
+    cursor: pointer;
     border: none;
     outline: none
 }
