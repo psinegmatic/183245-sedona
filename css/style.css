@@ -739,6 +739,7 @@ input[type="checkbox"]:disabled:checked + label::after  {
 
 .sort-by .active-sort {
     color: #81b3d2;
+    border: none;
 }
 
 .sort-by .active-sort:hover {
@@ -953,6 +954,7 @@ input[type="checkbox"]:disabled:checked + label::after  {
     margin: 0 auto; 
     font-size: 0;
     box-shadow: 0 5px 15px rgba(0,1,1,0.2);
+    background-image: url("../img/map.jpg")
 }
 
 .inner-footer {
