@@ -724,16 +724,16 @@ input[type="checkbox"]:disabled:checked + label::after  {
     font-size: 12px;
     font-weight: normal;
 }
-.sort-by li a {
+.sort-by a {
     color: #b1b1b1;
     border-bottom: dotted 1px #81b3d2;
 }
 
-.sort-by li a:hover {
+.sort-by a:hover {
     color: #81b3d2;
 }
 
-.sort-by li a:active {
+.sort-by a:active {
     color: #000000;
     border: none;
 }
@@ -810,22 +810,22 @@ input[type="checkbox"]:disabled:checked + label::after  {
     border-bottom: solid 1px #e5e5e5;
 }
 
-.result-item-info h2 {
+.hotel-name {
     margin-top: -5px;
     margin-bottom: 5px;
     font-size: 21px;
     line-height: 26px;
 }
 
-.result-item-info h2 a {
+.hotel-name a {
     color: black;
 }
 
-.result-item-info h2 a:hover {
+.hotel-name a:hover {
 	color: #81b3d2;
 }
 
-.result-item-info h2 a:active {
+.hotel-name a:active {
     color: #b2b2b2;
 }
 
